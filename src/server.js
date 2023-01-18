@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 const posts = {};
 
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "/index.html"));
+  res.sendFile(path.join(__dirname, "../index.html"));
 });
 
 app.get("/posts", (req, res) => {
